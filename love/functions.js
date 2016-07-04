@@ -1,4 +1,4 @@
-
+﻿
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
@@ -77,7 +77,8 @@ function startHeartAnimation() {
 			$ele.html('');
 			var timer = setInterval(function() {
 				var current = str.substr(progress, 1);
-				if (current == '<') {="" progress="str.indexOf('">', progress) + 1;
+				if (current == '<') {
+					progress = str.indexOf('>', progress) + 1;
 				} else {
 					progress++;
 				}
@@ -109,7 +110,7 @@ function timeElapse(date){
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	var result = "<span class="\"digit\"">" + days + "</span> 日夜 <span class="\"digit\"">" + hours + "</span> 小时 <span class="\"digit\"">" + minutes + "</span> 分钟 <span class="\"digit\"">" + seconds + "</span> 秒钟 "; 
+	var result = "<span class=\"digit\">" + days + "</span> 日夜 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒钟 "; 
 	$("#elapseClock").html(result);
 }
 
@@ -132,4 +133,4 @@ function adjustCodePosition() {
 
 function showLoveU() {
 	$('#loveu').fadeIn(3000);
-}</')>
+}
