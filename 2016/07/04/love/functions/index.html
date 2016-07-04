@@ -84,19 +84,34 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
+var clientWidth = $(window).width();
+var clientHeight = $(window).height();
+
+$(function () {
+    // setup garden
+	$loveHeart = $(&quot;#l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/07/04/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/07/04/love/functions/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-07-04T12:41:17.690Z">
+<meta property="og:description" content="var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
+var clientWidth = $(window).width();
+var clientHeight = $(window).height();
+
+$(function () {
+    // setup garden
+	$loveHeart = $(&quot;#l">
+<meta property="og:updated_time" content="2016-07-04T07:21:58.130Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
+var clientWidth = $(window).width();
+var clientHeight = $(window).height();
+
+$(function () {
+    // setup garden
+	$loveHeart = $(&quot;#l">
 
 
 
@@ -117,9 +132,9 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/07/04/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/04/love/functions/"/>
 
-  <title> Hello World | Hexo </title>
+  <title>  | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -239,7 +254,7 @@ Quick">
             
             
               
-                Hello World
+                
               
             
           </h1>
@@ -251,7 +266,7 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-07-04T20:41:17+08:00" content="2016-07-04">
+            <time itemprop="dateCreated" datetime="2016-07-04T21:21:46+08:00" content="2016-07-04">
               2016-07-04
             </time>
           </span>
@@ -279,16 +294,141 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        
+var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
+var clientWidth = $(window).width();
+var clientHeight = $(window).height();
 
+$(function () {
+    // setup garden
+	$loveHeart = $("#loveHeart");
+	var offsetX = $loveHeart.width() / 2;
+	var offsetY = $loveHeart.height() / 2 - 55;
+    $garden = $("#garden");
+    gardenCanvas = $garden[0];
+	gardenCanvas.width = $("#loveHeart").width();
+    gardenCanvas.height = $("#loveHeart").height()
+    gardenCtx = gardenCanvas.getContext("2d");
+    gardenCtx.globalCompositeOperation = "lighter";
+    garden = new Garden(gardenCtx, gardenCanvas);
+	
+	$("#content").css("width", $loveHeart.width() + $("#code").width());
+	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
+	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
+	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
+
+    // renderLoop
+    setInterval(function () {
+        garden.render();
+    }, Garden.options.growSpeed);
+});
+
+$(window).resize(function() {
+    var newWidth = $(window).width();
+    var newHeight = $(window).height();
+    if (newWidth != clientWidth && newHeight != clientHeight) {
+        location.replace(location);
+    }
+});
+
+function getHeartPoint(angle) {
+	var t = angle / Math.PI;
+	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
+	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+	return new Array(offsetX + x, offsetY + y);
+}
+
+function startHeartAnimation() {
+	var interval = 50;
+	var angle = 10;
+	var heart = new Array();
+	var animationTimer = setInterval(function () {
+		var bloom = getHeartPoint(angle);
+		var draw = true;
+		for (var i = 0; i < heart.length; i++) {
+			var p = heart[i];
+			var distance = Math.sqrt(Math.pow(p[0] - bloom[0], 2) + Math.pow(p[1] - bloom[1], 2));
+			if (distance < Garden.options.bloomRadius.max * 1.3) {
+				draw = false;
+				break;
+			}
+		}
+		if (draw) {
+			heart.push(bloom);
+			garden.createRandomBloom(bloom[0], bloom[1]);
+		}
+		if (angle >= 30) {
+			clearInterval(animationTimer);
+			showMessages();
+		} else {
+			angle += 0.2;
+		}
+	}, interval);
+}
+
+(function($) {
+	$.fn.typewriter = function() {
+		this.each(function() {
+			var $ele = $(this), str = $ele.html(), progress = 0;
+			$ele.html('');
+			var timer = setInterval(function() {
+				var current = str.substr(progress, 1);
+				if (current == '<') {="" progress="str.indexOf('">', progress) + 1;
+				} else {
+					progress++;
+				}
+				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+				if (progress >= str.length) {
+					clearInterval(timer);
+				}
+			}, 75);
+		});
+		return this;
+	};
+})(jQuery);
+
+function timeElapse(date){
+	var current = Date();
+	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+	var days = Math.floor(seconds / (3600 * 24));
+	seconds = seconds % (3600 * 24);
+	var hours = Math.floor(seconds / 3600);
+	if (hours < 10) {
+		hours = "0" + hours;
+	}
+	seconds = seconds % 3600;
+	var minutes = Math.floor(seconds / 60);
+	if (minutes < 10) {
+		minutes = "0" + minutes;
+	}
+	seconds = seconds % 60;
+	if (seconds < 10) {
+		seconds = "0" + seconds;
+	}
+	var result = "<span class="\"digit\"">" + days + "</span> 日夜 <span class="\"digit\"">" + hours + "</span> 小时 <span class="\"digit\"">" + minutes + "</span> 分钟 <span class="\"digit\"">" + seconds + "</span> 秒钟 "; 
+	$("#elapseClock").html(result);
+}
+
+function showMessages() {
+	adjustWordsPosition();
+	$('#messages').fadeIn(5000, function() {
+		showLoveU();
+	});
+}
+
+function adjustWordsPosition() {
+	$('#words').css("position", "absolute");
+	$('#words').css("top", $("#garden").position().top + 195);
+	$('#words').css("left", $("#garden").position().left + 70);
+}
+
+function adjustCodePosition() {
+	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
+}
+
+function showLoveU() {
+	$('#loveu').fadeIn(3000);
+}</')>
       
     </div>
 
@@ -312,11 +452,15 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/07/04/love/default/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/04/love/default/" rel="prev" title="">
+              <a href="/2016/07/04/love/garden/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -418,7 +562,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
